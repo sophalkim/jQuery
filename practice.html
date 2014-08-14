@@ -9,12 +9,52 @@
 	<h1 id="cool">Hello World</h1>
 
 
+	<hr>
+	<br>
+	<div class="grandparent">
+		<div class="parent">
+			<div class="child">
+				<span class="subchild"></span>
+			</div>
+		</div>
+		<div class="surrogateParent1"></div>
+		<div class="surrogateParent2"></div>
+	</div>
+
+
 
 
 
 	<script src="scripts/jquery.min.js"></script>
 	<script>
 		$("#cool").append(" Cool");
+		console.log("Page has loaded");
+		$("h1").css("fontSize", "100px");
+		$("h1").css({
+			fontSize: "100px",
+			color: "red"
+		});
+	</script>
+	<script>
+
+		$("span.subchild").parent();
+		$("span.subchild").parents("div.parent");
+		$("span.subchild").parents();
+		$("span.subchild").parentsUntil("div.grandparent");
+		$("span.subchild").closet("div");
+		$("div.child").closet("div");
+		$("div.grandparent").children("div");
+		$("div.grandparent").find("div");
+		$("div.parent").next();
+		$("div.parent").prev();
+		$("div.parent").nextAll();
+		$("div.parent").nextAll().first();
+		$("div.parent").nextAll().last();
+		$("div.parent").siblings();
+
+		$("h1").css("fontSize");
+		$("h1").css("font-size");
+
 	</script>
 </body>
 </html>
