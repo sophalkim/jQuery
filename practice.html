@@ -24,6 +24,9 @@
 			<li><a href="">Link 1</a></li>
 			<li><a href="">Link 2</a></li>
 			<li><a href="">Link 3</a></li>
+			<li id="a"></li>
+			<li id="b"></li>
+			<li id="c"></li>
 		</ul>
 	</div>
 
@@ -192,6 +195,25 @@
 		$("li").map(function(index, element) {
 			return this.id;
 		}).get();
+
+		var arr = [{
+			id: "a",
+			tagName: "li"
+		}, {
+			id: "b",
+			tagName: "li"
+		}, {
+			id: "c",
+			tagName: "li"
+		}];
+
+		$("li").map(function(index, element) {
+			return element.id;
+		}).get();
+
+		$.map(arr, function(value, index) {
+			return value.id;
+		});
 
 	</script>
 </body>
