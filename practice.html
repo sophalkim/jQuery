@@ -127,6 +127,34 @@
 		$("#foo").click(myObject.myFn);
 		$("#foo").click($.proxy(myObject, "myFn"));
 
+		var sum = 0;
+		var arr = [1, 2, 3, 4, 5];
+
+		for (var i = 0; i < arr.length; i++) {
+			sum += arr[i];
+		}
+		console.log(sum);
+
+		$.each(arr, function(index, value) {
+			sum += value;
+		});
+
+		var sum = 0;
+		var obj = {
+			foo: 1,
+			bar: 2
+		};
+
+		for (var item in obj) {
+			sum += obj[item];
+		}
+		console.log(sum);
+
+		$.each(obj, function(key, value) {
+			sum += value;
+		});
+		console.log(sum);
+
 	</script>
 </body>
 </html>
