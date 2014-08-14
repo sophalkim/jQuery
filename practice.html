@@ -19,7 +19,15 @@
 		</div>
 		<div class="surrogateParent1"></div>
 		<div class="surrogateParent2"></div>
+
+		<ul>
+			<li><a href="">Link 1</a></li>
+			<li><a href="">Link 2</a></li>
+			<li><a href="">Link 3</a></li>
+		</ul>
 	</div>
+
+
 
 
 
@@ -45,6 +53,13 @@
 		console.log(h1.height());
 		h1.data("keyName", {foo: "bar"});
 		console.log(h1.data("keyName"));
+
+		var newArr = [];
+
+		$("li").each(function() {
+			newArr.push(this.id);
+		});
+		console.log(newArr);
 
 
 	</script>
@@ -154,6 +169,29 @@
 			sum += value;
 		});
 		console.log(sum);
+
+		$("li").each(function(index, element) {
+			console.log($(this).text());
+		});
+
+		$("li").addClass("newClass");
+		$("input").each(function(i, el) {
+			var elem = $(el);
+			elem.val(elem.val() + "%");
+		});
+
+		$("input").each(function(i, el) {
+			var elem = $(el);
+			elem.val(elem.val() + "%");
+		});
+
+		$("input").val(function(index, value) {
+			return value + "%";
+		});
+
+		$("li").map(function(index, element) {
+			return this.id;
+		}).get();
 
 	</script>
 </body>
