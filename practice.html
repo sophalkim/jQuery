@@ -86,6 +86,28 @@
 		var firstLi = $("#myList li:first");
 		firstLi.data("contentDiv").html("new content");
 
+		$.trim("     Removes the extra white space");
+
+		$.each(["foo", "bar", "baz"], function(idx, val) {
+			console.log("element" + idx + " is" + val);
+		});
+
+		$.each({foo: "bar", baz: "bim"}, function(k, v) {
+			console.log(k + " : " + v);
+		});
+
+		var myArray = [1, 2, 3, 5];
+
+		if ($.inArray(4, myArray) !== -1) {
+			console.log("found it!");
+		}
+
+		var firstObject = { foo: "bar", a: "b"};
+		var secondObject = { foo: "baz"};
+		var newObject = $.extend(firstObject, secondObject);
+		console.log(firstObject.foo);
+		console.log(secondObject.foo);
+
 	</script>
 </body>
 </html>
