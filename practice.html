@@ -46,7 +46,7 @@
 		h1.data("keyName", {foo: "bar"});
 		console.log(h1.data("keyName"));
 
-		
+
 	</script>
 	<script>
 
@@ -76,6 +76,15 @@
 		if (h1.hasClass("big")) {
 			h1.css("color", "green");
 		}
+
+		$("#myList li").each(function() {
+			var li = $(this);
+			var div = li.find("div.content");
+			li.data("contentDiv", div);
+		});
+
+		var firstLi = $("#myList li:first");
+		firstLi.data("contentDiv").html("new content");
 
 	</script>
 </body>
