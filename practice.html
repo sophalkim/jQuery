@@ -108,6 +108,25 @@
 		console.log(firstObject.foo);
 		console.log(secondObject.foo);
 
+		var myFunction = function() {
+			console.log(this);
+		};
+		var myObject = {
+			foo: "bar";
+		};
+		myFunction();
+		var myProxyFunction = $.proxy(myFunction, myObject);
+		myProxyFunction();
+
+		var myObject = {
+			myFn: function() {
+				console.log(this);
+			}
+		};
+
+		$("#foo").click(myObject.myFn);
+		$("#foo").click($.proxy(myObject, "myFn"));
+
 	</script>
 </body>
 </html>
