@@ -27,6 +27,10 @@
 			<li id="a"></li>
 			<li id="b"></li>
 			<li id="c"></li>
+			<li id="foo1">foo</li>
+			<li id="bar1">bar</li>
+			<li id="baz1">baz</li>
+			<div class="test"></div>
 		</ul>
 	</div>
 
@@ -215,6 +219,17 @@
 			return value.id;
 		});
 
+		var foo = $("#foo1");
+		console.log("Index: " + foo.index());
+
+		var listItem = $("li");
+		console.log("Index: " + listItem.index());
+		console.log("Index: " + listItem.first().index());
+
+		var div = $("div");
+
+		var foo = $("li");
+		console.log("Index: " + foo.index("li"));
 	</script>
 </body>
 </html>
