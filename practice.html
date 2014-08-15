@@ -4,34 +4,42 @@
 	<meta charset="utf-8">
 	<title>jQuery Practice</title>
 	<link rel="stylesheet" type="text/css" href="css/practice.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 <body>
-	<h1 id="cool">Hello World</h1>
+	<div class="container">
+		<h1 id="cool">Hello World</h1>
 
 
-	<hr>
-	<br>
-	<div class="grandparent">
-		<div class="parent">
-			<div class="child">
-				<span class="subchild"></span>
+		<hr>
+		<br>
+		<div class="grandparent">
+			<div class="parent">
+				<div class="child">
+					<span class="subchild"></span>
+				</div>
 			</div>
-		</div>
-		<div class="surrogateParent1"></div>
-		<div class="surrogateParent2"></div>
+			<div class="surrogateParent1"></div>
+			<div class="surrogateParent2"></div>
 
-		<ul>
-			<li><a href="">Link 1</a></li>
-			<li><a href="">Link 2</a></li>
-			<li><a href="">Link 3</a></li>
-			<li id="a"></li>
-			<li id="b"></li>
-			<li id="c"></li>
-			<li id="foo1">foo</li>
-			<li id="bar1">bar</li>
-			<li id="baz1">baz</li>
-			<div class="test"></div>
-		</ul>
+			<ul>
+				<li><a href="">Link 1</a></li>
+				<li><a href="">Link 2</a></li>
+				<li><a href="">Link 3</a></li>
+				<li id="a"></li>
+				<li id="b"></li>
+				<li id="c"></li>
+				<li id="foo1">foo</li>
+				<li id="bar1">bar</li>
+				<li id="baz1">baz</li>
+				<div class="test"></div>
+			</ul>
+
+
+			<hr>
+			<br>
+			<button class="btn btn-info">Change my Color</button>
+		</div>
 	</div>
 
 
@@ -41,6 +49,7 @@
 
 
 	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
 	<script>
 		$("#cool").append(" Cool");
 		console.log("Page has loaded");
