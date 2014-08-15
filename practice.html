@@ -38,7 +38,7 @@
 
 			<hr>
 			<br>
-			<button class="btn btn-info">Change my Color</button>
+			<button class="btn btn-info" id="buttonColor">Change my Color</button>
 		</div>
 	</div>
 
@@ -51,24 +51,36 @@
 	<script src="scripts/jquery.min.js"></script>
 	<script src="scripts/bootstrap.min.js"></script>
 	<script>
-		$("#cool").append(" Cool");
-		console.log("Page has loaded");
-		$("h1").css("fontSize", "100px");
-		$("h1").css({
-			fontSize: "100px",
-			color: "red"
+		var buttonColor = $("#buttonColor");
+		buttonColor.click(function() {
+			if (buttonColor.hasClass("btn-info")) {
+				buttonColor.removeClass("btn-info");
+				buttonColor.addClass("btn-warning");
+			} else {
+				buttonColor.removeClass("btn-warning");
+				buttonColor.addClass("btn-info");
+			}		
 		});
-		var h1 = $("h1");
-		h1.addClass("big");
-		if (h1.hasClass("big")) {
-			h1.css("color", "green");
-		}
-		h1.width("50px");
-		console.log(h1.width());
-		h1.height("100px");
-		console.log(h1.height());
-		h1.data("keyName", {foo: "bar"});
-		console.log(h1.data("keyName"));
+
+
+		// $("#cool").append(" Cool");
+		// console.log("Page has loaded");
+		// $("h1").css("fontSize", "100px");
+		// $("h1").css({
+		// 	fontSize: "100px",
+		// 	color: "red"
+		// });
+		// var h1 = $("h1");
+		// h1.addClass("big");
+		// if (h1.hasClass("big")) {
+		// 	h1.css("color", "green");
+		// }
+		// h1.width("50px");
+		// console.log(h1.width());
+		// h1.height("100px");
+		// console.log(h1.height());
+		// h1.data("keyName", {foo: "bar"});
+		// console.log(h1.data("keyName"));
 
 		var newArr = [];
 
