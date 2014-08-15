@@ -39,6 +39,10 @@
 			<hr>
 			<br>
 			<button class="btn btn-info" id="buttonColor">Change my Color</button>
+
+			<hr>
+			<br>
+			<button class="btn btn-primary">Change all button colors</button>
 		</div>
 	</div>
 
@@ -60,6 +64,17 @@
 				buttonColor.removeClass("btn-warning");
 				buttonColor.addClass("btn-info");
 			}		
+		});
+
+		var allButton = $(".btn");
+		allButton.click(function() {
+			if (allButton.hasClass("btn-primary")) {
+				allButton.removeClass("btn-primary");
+				allButton.addClass("btn-danger");
+			} else {
+				allButton.removeClass("btn-danger");
+				allButton.addClass("btn-primary");
+			}
 		});
 
 
