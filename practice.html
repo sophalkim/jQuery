@@ -47,7 +47,7 @@
 			<hr>
 			<br>
 			<div class="row">
-  				<div class="col-xs-6 col-md-3">
+  				<div id="waterfall" class="col-xs-6 col-md-3">
     				<a href="#" class="thumbnail">
       					<img src="images/waterfall.jpg">
     				</a>
@@ -86,6 +86,12 @@
 				allButton.addClass("btn-primary");
 			}
 		});
+
+		var thumbnail = $("#waterfall");
+		thumbnail.animate({
+			left: "+=200px"
+		}, "slow");
+
 
 
 		// $("#cool").append(" Cool");
