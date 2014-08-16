@@ -5,6 +5,11 @@
 	<title>jQuery Practice</title>
 	<link rel="stylesheet" type="text/css" href="css/practice.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<style>
+		#showText {
+			display: none;
+		}
+	</style>
 </head>
 <body>
 	<div class="container">
@@ -53,6 +58,13 @@
     				</a>
   				</div>
 			</div>
+
+			<hr>
+			<br>
+			<button class="btn btn-warning" id="showButton">Show</button>
+			<h1 id="showText">Hi</h1>
+			<hr>
+			<br>
 		</div>
 	</div>
 
@@ -91,6 +103,12 @@
 		thumbnail.animate({
 			left: "+=200px"
 		}, "slow");
+
+		var showButton = $("#showButton");
+		var showText = $("#showText");
+		showButton.click(function() {
+			showText.show("fast");
+		});
 
 
 
