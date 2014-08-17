@@ -80,7 +80,7 @@
 			<hr>
 			<br>
 
-			<button class="btn btn-info">Replace</button>
+			<button class="btn btn-info" id="linkItemReplaceButton">Replace</button>
 			<br>
 			<br>
 			<div class="panel panel-danger">
@@ -143,6 +143,15 @@
 		enableButton.click(function() {
 			$(".form-control").prop("disabled", false);
 		});
+
+		var linkItemReplaceButton = $("#linkItemReplaceButton");
+		linkItemReplaceButton = $(function() {
+			var secondListItem = $(this).find(".list-group-item").eq(2);
+			var secondListItemNewText = secondListItem.text().replace("Banana", "Coconut");
+			secondListItem.text(secondListItemNewText);
+		});
+
+		
 
 		
 
