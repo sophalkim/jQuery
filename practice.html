@@ -47,7 +47,7 @@
 
 			<hr>
 			<br>
-			<button class="btn btn-primary">Change all button colors</button>
+			<button class="btn btn-primary" id="buttonColor2">Change all button colors</button>
 
 			<hr>
 			<br>
@@ -63,6 +63,20 @@
 			<br>
 			<button class="btn btn-warning" id="showButton">Show</button>
 			<h1 id="showText">Hi</h1>
+			<hr>
+			<br>
+
+			<button class="btn btn-success" id="enableForm">Enable</button>
+			<br>
+			<br>
+
+			<div class="input-group">
+  				<span class="input-group-addon">UserName</span>
+  				<input type="text" class="form-control" placeholder="Username">
+  				<span class="input-group-addon">Password</span>
+  				<input type="text" class="form-control" placeholder="Password">
+			</div>
+
 			<hr>
 			<br>
 		</div>
@@ -88,7 +102,7 @@
 			}		
 		});
 
-		var allButton = $(".btn");
+		var allButton = $("#buttonColor2");
 		allButton.click(function() {
 			if (allButton.hasClass("btn-primary")) {
 				allButton.removeClass("btn-primary");
@@ -109,6 +123,14 @@
 		showButton.click(function() {
 			showText.show("fast");
 		});
+
+		$(".form-control").prop("disabled", true);
+		var enableButton = $("#enableForm");
+		enableButton.click(function() {
+			$(".form-control").prop("disabled", false);
+		});
+
+		
 
 
 
