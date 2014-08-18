@@ -93,6 +93,24 @@
 					</ul>
 				</div>
 			</div>
+
+			<hr>
+			<br>
+
+			<button class="btn btn-primary" id="showCheckBoxButton">Show Checkbox</button>
+			<br>
+			<br>
+
+			<div class="input-group" id="checkBox">
+				<span class="input-group-addon">
+					<input type="checkbox">
+				</span>
+				<input type="text" class="form-control"></input>
+			</div>
+
+			<br>
+			<br>
+			<hr>
 		</div>
 	</div>
 
@@ -148,6 +166,11 @@
 		linkItemReplaceButton.click(function() {
 			var secondListItem = $("li.list-group-item").eq("1");
 			secondListItem.text("Hello World");
+		});
+
+		var showCheckBoxButton = $("#showCheckBoxButton");
+		showCheckBoxButton.click(function() {
+			alert("Hello CheckBox");
 		});
 
 		
