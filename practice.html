@@ -145,10 +145,11 @@
 		});
 
 		var linkItemReplaceButton = $("#linkItemReplaceButton");
-		linkItemReplaceButton = $(function() {
-			var secondListItem = $(this).find(".list-group-item").eq(2);
-			var secondListItemNewText = secondListItem.text().replace("Banana", "Coconut");
-			secondListItem.text(secondListItemNewText);
+		linkItemReplaceButton.click(function() {
+			alert("Hello World");
+			// var secondListItem = $(this).find(".list-group-item").eq(2);
+			// var secondListItemNewText = secondListItem.text().replace("Banana", "Coconut");
+			// secondListItem.text(secondListItemNewText);
 		});
 
 		
