@@ -171,7 +171,9 @@
 		var showCheckBoxButton = $("#showCheckBoxButton");
 		showCheckBoxButton.click(function() {
 			var checkBox = $("#checkBox");
-			checkBox.show();
+			if (checkBox.is(":hidden")) {
+				checkBox.show();
+			}
 		});
 
 		
