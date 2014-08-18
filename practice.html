@@ -97,7 +97,7 @@
 			<hr>
 			<br>
 
-			<button class="btn btn-primary" id="showCheckBoxButton">Show Checkbox</button>
+			<button class="btn btn-primary" id="showCheckBoxButton">Toggle Checkbox</button>
 			<br>
 			<br>
 
@@ -173,6 +173,8 @@
 			var checkBox = $("#checkBox");
 			if (checkBox.is(":hidden")) {
 				checkBox.show();
+			} else {
+				checkBox.hide();
 			}
 		});
 
