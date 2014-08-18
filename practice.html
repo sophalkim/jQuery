@@ -146,10 +146,9 @@
 
 		var linkItemReplaceButton = $("#linkItemReplaceButton");
 		linkItemReplaceButton.click(function() {
-			alert("Hello World");
-			// var secondListItem = $(this).find(".list-group-item").eq(2);
+			var secondListItem = $("li.list-group-item");
 			// var secondListItemNewText = secondListItem.text().replace("Banana", "Coconut");
-			// secondListItem.text(secondListItemNewText);
+			secondListItem.text("Hello World");
 		});
 
 		
