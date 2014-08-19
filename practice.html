@@ -111,6 +111,11 @@
 			<br>
 			<br>
 			<hr>
+
+			<button class="btn btn-warning" id="buttonOn">Using on()</button>
+
+			<hr>
+			<br>
 		</div>
 	</div>
 
@@ -123,6 +128,11 @@
 	<script src="scripts/jquery.min.js"></script>
 	<script src="scripts/bootstrap.min.js"></script>
 	<script>
+
+		var buttonOn = $("#buttonOn");
+		buttonOn.on("click", function() {
+			alert("Using the .on() function");
+		});
 		var buttonColor = $("#buttonColor");
 		buttonColor.click(function() {
 			if (buttonColor.hasClass("btn-info")) {
