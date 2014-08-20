@@ -4702,5 +4702,14 @@ var myArray = data[data.length - 1];
 var data2 = myArray.data;
 var student = data2.students;
 var studentLength = student.length;
-console.log(studentLength);
-h1.text(studentLength);
+console.log(data.length);
+h1.text(average());
+
+function average() {
+	var count = 0;
+	var sections = data.length;
+	for (var i = 0; i < data.length; i++) {
+		count += data[i].data.students.length;
+	}
+	return count / data.length;
+}
