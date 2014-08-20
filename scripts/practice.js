@@ -59,9 +59,13 @@ showCheckBoxButton.click(function() {
 	}
 });
 
-var panelElement = document.getElementById("panelElement");
-var listGroupItems = $(panelElement).find(".list-group-item");
-listGroupItems.text("Potato");
+
+var panelButton = $("#panelButton");
+panelButton.click(function() {
+	var panelElement = document.getElementById("panelElement");
+	var listGroupItems = $(panelElement).find(".list-group-item");
+	listGroupItems.text("Potato");
+});
 
 
 
