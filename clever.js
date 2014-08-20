@@ -4698,4 +4698,6 @@ var x = {
 
 var h1 = $("#clever");
 var data = x.data;
-h1.text(data);
+var myArray = data[0];
+var students = myArray.students.length
+h1.text(students);
