@@ -1,3 +1,5 @@
+
+
 var buttonOn = $("#buttonOn");
 buttonOn.on("click", function() {
 	alert("Using the .on() function");
@@ -57,6 +59,12 @@ showCheckBoxButton.click(function() {
 	}
 });
 
+var panelElement = document.getElementById("panelElement");
+var listGroupItems = $(panelElement).find(".list-group-item");
+listGroupItems.text("Potato");
+
+
+
 
 
 
@@ -82,168 +90,171 @@ showCheckBoxButton.click(function() {
 // h1.data("keyName", {foo: "bar"});
 // console.log(h1.data("keyName"));
 
-var newArr = [];
+// var newArr = [];
 
-$("li").each(function() {
-	newArr.push(this.id);
-});
-console.log(newArr);
+// $("li").each(function() {
+// 	newArr.push(this.id);
+// });
+// console.log(newArr);
 
-$("span.subchild").parent();
-$("span.subchild").parents("div.parent");
-$("span.subchild").parents();
-$("span.subchild").parentsUntil("div.grandparent");
-$("span.subchild").closet("div");
-$("div.child").closet("div");
-$("div.grandparent").children("div");
-$("div.grandparent").find("div");
-$("div.parent").next();
-$("div.parent").prev();
-$("div.parent").nextAll();
-$("div.parent").nextAll().first();
-$("div.parent").nextAll().last();
-$("div.parent").siblings();
+// $("span.subchild").parent();
+// $("span.subchild").parents("div.parent");
+// $("span.subchild").parents();
+// $("span.subchild").parentsUntil("div.grandparent");
+// $("span.subchild").closet("div");
+// $("div.child").closet("div");
+// $("div.grandparent").children("div");
+// $("div.grandparent").find("div");
+// $("div.parent").next();
+// $("div.parent").prev();
+// $("div.parent").nextAll();
+// $("div.parent").nextAll().first();
+// $("div.parent").nextAll().last();
+// $("div.parent").siblings();
 
-$("h1").css("fontSize");
-$("h1").css("font-size");
+// $("h1").css("fontSize");
+// $("h1").css("font-size");
 
-var h1 = $("h1");
-h1.addClass("big");
-h1.removeClass("big");
-h1.toggleClass("big");
+// var h1 = $("h1");
+// h1.addClass("big");
+// h1.removeClass("big");
+// h1.toggleClass("big");
 
-if (h1.hasClass("big")) {
-	h1.css("color", "green");
-}
+// if (h1.hasClass("big")) {
+// 	h1.css("color", "green");
+// }
 
-$("#myList li").each(function() {
-	var li = $(this);
-	var div = li.find("div.content");
-	li.data("contentDiv", div);
-});
+// $("#myList li").each(function() {
+// 	var li = $(this);
+// 	var div = li.find("div.content");
+// 	li.data("contentDiv", div);
+// });
 
-var firstLi = $("#myList li:first");
-firstLi.data("contentDiv").html("new content");
+// var firstLi = $("#myList li:first");
+// firstLi.data("contentDiv").html("new content");
 
-$.trim("     Removes the extra white space");
+// $.trim("     Removes the extra white space");
 
-$.each(["foo", "bar", "baz"], function(idx, val) {
-	console.log("element" + idx + " is" + val);
-});
+// $.each(["foo", "bar", "baz"], function(idx, val) {
+// 	console.log("element" + idx + " is" + val);
+// });
 
-$.each({foo: "bar", baz: "bim"}, function(k, v) {
-	console.log(k + " : " + v);
-});
+// $.each({foo: "bar", baz: "bim"}, function(k, v) {
+// 	console.log(k + " : " + v);
+// });
 
-var myArray = [1, 2, 3, 5];
+// var myArray = [1, 2, 3, 5];
 
-if ($.inArray(4, myArray) !== -1) {
-	console.log("found it!");
-}
+// if ($.inArray(4, myArray) !== -1) {
+// 	console.log("found it!");
+// }
 
-var firstObject = { foo: "bar", a: "b"};
-var secondObject = { foo: "baz"};
-var newObject = $.extend(firstObject, secondObject);
-console.log(firstObject.foo);
-console.log(secondObject.foo);
+// var firstObject = { foo: "bar", a: "b"};
+// var secondObject = { foo: "baz"};
+// var newObject = $.extend(firstObject, secondObject);
+// console.log(firstObject.foo);
+// console.log(secondObject.foo);
 
-var myFunction = function() {
-	console.log(this);
-};
-var myObject = {
-	foo: "bar";
-};
-myFunction();
-var myProxyFunction = $.proxy(myFunction, myObject);
-myProxyFunction();
+// var myFunction = function() {
+// 	console.log(this);
+// };
+// var myObject = {
+// 	foo: "bar";
+// };
+// myFunction();
+// var myProxyFunction = $.proxy(myFunction, myObject);
+// myProxyFunction();
 
-var myObject = {
-	myFn: function() {
-		console.log(this);
-	}
-};
+// var myObject = {
+// 	myFn: function() {
+// 		console.log(this);
+// 	}
+// };
 
-$("#foo").click(myObject.myFn);
-$("#foo").click($.proxy(myObject, "myFn"));
+// $("#foo").click(myObject.myFn);
+// $("#foo").click($.proxy(myObject, "myFn"));
 
-var sum = 0;
-var arr = [1, 2, 3, 4, 5];
+// var sum = 0;
+// var arr = [1, 2, 3, 4, 5];
 
-for (var i = 0; i < arr.length; i++) {
-	sum += arr[i];
-}
-console.log(sum);
+// for (var i = 0; i < arr.length; i++) {
+// 	sum += arr[i];
+// }
+// console.log(sum);
 
-$.each(arr, function(index, value) {
-	sum += value;
-});
+// $.each(arr, function(index, value) {
+// 	sum += value;
+// });
 
-var sum = 0;
-var obj = {
-	foo: 1,
-	bar: 2
-};
+// var sum = 0;
+// var obj = {
+// 	foo: 1,
+// 	bar: 2
+// };
 
-for (var item in obj) {
-	sum += obj[item];
-}
-console.log(sum);
+// for (var item in obj) {
+// 	sum += obj[item];
+// }
+// console.log(sum);
 
-$.each(obj, function(key, value) {
-	sum += value;
-});
-console.log(sum);
+// $.each(obj, function(key, value) {
+// 	sum += value;
+// });
+// console.log(sum);
 
-$("li").each(function(index, element) {
-	console.log($(this).text());
-});
+// $("li").each(function(index, element) {
+// 	console.log($(this).text());
+// });
 
-$("li").addClass("newClass");
-$("input").each(function(i, el) {
-	var elem = $(el);
-	elem.val(elem.val() + "%");
-});
+// $("li").addClass("newClass");
+// $("input").each(function(i, el) {
+// 	var elem = $(el);
+// 	elem.val(elem.val() + "%");
+// });
 
-$("input").each(function(i, el) {
-	var elem = $(el);
-	elem.val(elem.val() + "%");
-});
+// $("input").each(function(i, el) {
+// 	var elem = $(el);
+// 	elem.val(elem.val() + "%");
+// });
 
-$("input").val(function(index, value) {
-	return value + "%";
-});
+// $("input").val(function(index, value) {
+// 	return value + "%";
+// });
 
-$("li").map(function(index, element) {
-	return this.id;
-}).get();
+// $("li").map(function(index, element) {
+// 	return this.id;
+// }).get();
 
-var arr = [{
-	id: "a",
-	tagName: "li"
-}, {
-	id: "b",
-	tagName: "li"
-}, {
-	id: "c",
-	tagName: "li"
-}];
+// var arr = [{
+// 	id: "a",
+// 	tagName: "li"
+// }, {
+// 	id: "b",
+// 	tagName: "li"
+// }, {
+// 	id: "c",
+// 	tagName: "li"
+// }];
 
-$("li").map(function(index, element) {
-	return element.id;
-}).get();
+// $("li").map(function(index, element) {
+// 	return element.id;
+// }).get();
 
-$.map(arr, function(value, index) {
-	return value.id;
-});
+// $.map(arr, function(value, index) {
+// 	return value.id;
+// });
 
-var foo = $("#foo1");
-console.log("Index: " + foo.index());
+// var foo = $("#foo1");
+// console.log("Index: " + foo.index());
 
-var listItem = $("li");
-console.log("Index: " + listItem.index());
-console.log("Index: " + listItem.first().index());
+// var listItem = $("li");
+// console.log("Index: " + listItem.index());
+// console.log("Index: " + listItem.first().index());
 
-var div = $("div");
+// var div = $("div");
 
-var foo = $("li");
-console.log("Index: " + foo.index("li"));
+// var foo = $("li");
+// console.log("Index: " + foo.index("li"));
+
+// var panelElement = document.getElementById("#panelElement");
+// console.log(panelElement);
