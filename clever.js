@@ -4699,5 +4699,7 @@ var x = {
 var h1 = $("#clever");
 var data = x.data;
 var myArray = data[0];
-var students = myArray.students.length
-h1.text(students);
+var data2 = myArray.data;
+var student = data2.students;
+console.log(student);
+h1.text(student);
