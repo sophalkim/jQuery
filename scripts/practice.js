@@ -67,6 +67,12 @@ panelButton.click(function() {
 	listGroupItems.text("Potato");
 });
 
+var buttonInput = $("#buttonInput");
+buttonInput.click(function() {
+	var inputFirstNameValue = $("#inputFirstName").val();
+	alert(inputFirstNameValue);
+});
+
 
 
 
