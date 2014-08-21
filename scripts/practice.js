@@ -71,7 +71,9 @@ var buttonInput = $("#buttonInput");
 buttonInput.click(function() {
 	var inputFirstNameValue = $("#inputFirstName").val();
 	var textFirstLastName = $("#textFirstLastName");
-	textFirstLastName.text("Your name is " + inputFirstNameValue);
+	var inputLastName = $("#inputLastName");
+	inputLastName.val("Neat");
+	textFirstLastName.text("Your name is " + inputFirstNameValue + " " + inputLastName.val());
 });
 
 
