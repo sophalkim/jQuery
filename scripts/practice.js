@@ -37,10 +37,10 @@ showButton.click(function() {
 	showText.show("fast");
 });
 
-$(".form-control").prop("disabled", true);
+$("#formDisable").prop("disabled", true);
 var enableButton = $("#enableForm");
 enableButton.click(function() {
-	$(".form-control").prop("disabled", false);
+	$("#formDisable").prop("disabled", false);
 });
 
 var linkItemReplaceButton = $("#linkItemReplaceButton");
