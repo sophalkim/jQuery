@@ -70,7 +70,8 @@ panelButton.click(function() {
 var buttonInput = $("#buttonInput");
 buttonInput.click(function() {
 	var inputFirstNameValue = $("#inputFirstName").val();
-	alert(inputFirstNameValue);
+	var textFirstLastName = $("#textFirstLastName");
+	textFirstLastName.text("Your name is " + inputFirstNameValue);
 });
 
 
