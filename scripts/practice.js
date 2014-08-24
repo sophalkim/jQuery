@@ -82,6 +82,12 @@ glyphiconButton.click(function() {
 	glyphiconSpan.attr("class", "glyphicon glyphicon-heart");
 });
 
+var changePanelColorButton = $("#changePanelColorButton");
+changePanelColorButton.click(function() {
+	var panelContainer = $("#panelContainer");
+	panelContainer.attr("class", "panel panel-primary");
+});
+
 
 
 
