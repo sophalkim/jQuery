@@ -94,6 +94,11 @@ changePanelColorButton.click(function() {
 	}	
 });
 
+var imageFocus = $("#imageFocus");
+imageFocus.mouseover(function() {
+	alert("hi");
+});
+
 
 
 
