@@ -85,7 +85,13 @@ glyphiconButton.click(function() {
 var changePanelColorButton = $("#changePanelColorButton");
 changePanelColorButton.click(function() {
 	var panelContainer = $("#panelContainer");
-	panelContainer.attr("class", "panel panel-primary");
+	if (panelContainer.hasClass("panel-primary")) {
+		panelContainer.removeClass("panel-primary");
+		panelContainer.addClass("panel-success");
+	} else {
+		panelContainer.removeClass("panel-success");
+		panelContainer.addClass("panel-primary");
+	}	
 });
 
 
