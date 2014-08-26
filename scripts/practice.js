@@ -98,6 +98,9 @@ var imageFocus = $("#imageFocus");
 imageFocus.mouseover(function() {
 	imageFocus.attr("src", "images/waterfall.jpg");
 });
+imageFocus.mouseout(function() {
+	imageFocus.attr("src", "images/flower.jpg");
+});
 
 
 
