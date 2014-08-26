@@ -96,7 +96,7 @@ changePanelColorButton.click(function() {
 
 var imageFocus = $("#imageFocus");
 imageFocus.mouseover(function() {
-	imageFocus.attr("src").replace("flower.jpg", "waterfall.jpg");
+	imageFocus.attr("src", "images/waterfall.jpg");
 });
 
 
