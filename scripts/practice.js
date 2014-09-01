@@ -107,8 +107,18 @@ lgi1.mouseover(function() {
 	lgi1.text("GOLDEN");
 });
 lgi1.mouseout(function() {
-	lgi1.text("red");
+	lgi1.text("Red");
 });
+
+
+var lgi3 = $("#lgi3");
+lgi3.mouseover(function () {
+	lgi3.attr("class", "list-group-item list-group-item-warning");
+});
+lgi3.mouseout(function() {
+	lgi3.attr("class", "list-group-item");
+});
+
 
 
 
