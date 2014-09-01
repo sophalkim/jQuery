@@ -102,6 +102,14 @@ imageFocus.mouseout(function() {
 	imageFocus.attr("src", "images/flower.jpg");
 });
 
+var lgi1 = $("#lgi1");
+lgi1.mouseover(function() {
+	lgi1.text("GOLDEN");
+});
+lgi1.mouseout(function() {
+	lgi1.text("red");
+});
+
 
 
 
