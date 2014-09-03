@@ -5,3 +5,9 @@
 #bodyContainer {
 	padding-top: 70px;
 }
+
+#navigationText {
+	font-weight: bold;
+	font-size: 25px;
+	font-family: "Arial";
+}
