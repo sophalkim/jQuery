@@ -45,3 +45,13 @@ linkItemReplaceButton.click(function() {
 	var secondListItem = $("li.list-group-item").eq("1");
 	secondListItem.text("Hello World");
 });
+
+var showCheckBoxButton = $("#showCheckBoxButton");
+showCheckBoxButton.click(function() {
+	var checkBox = $("#checkBox");
+	if (checkBox.is(":hidden")) {
+		checkBox.show();
+	} else {
+		checkBox.hide();
+	}
+});
