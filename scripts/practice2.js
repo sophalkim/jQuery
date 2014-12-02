@@ -55,3 +55,10 @@ showCheckBoxButton.click(function() {
 		checkBox.hide();
 	}
 });
+
+var panelButton = $("#panelButton");
+panelButton.click(function() {
+	var panelElement = document.getElementById("panelElement");
+	var listGroupItem = $(panelElement).find(".list-group-item");
+	listGroupItem.text("Potato");
+});
