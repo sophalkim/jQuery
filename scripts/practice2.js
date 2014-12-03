@@ -62,3 +62,12 @@ panelButton.click(function() {
 	var listGroupItem = $(panelElement).find(".list-group-item");
 	listGroupItem.text("Potato");
 });
+
+var buttonInput = $("#buttonInput");
+buttonInput.click(function() {
+	var inputFirstNameValue = $("#inputFirstName").val();
+	var textFirstLastName = $("#textFirstLastName");
+	var inputLastName = $("#inputLastName");
+	inputLastName.val("Neat");
+	textFirstLastName.text("Your name is " + inputFirstNameValue + " " + inputLastName.val());
+});
