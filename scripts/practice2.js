@@ -77,3 +77,14 @@ glyphiconButton.click(function() {
 	var glyphiconSpan = $("#glyphiconSpan");
 	glyphiconSpan.attr("class", "glyphicon glyphicon-heart");
 });
+
+var changePanelColorButton = $("#changePanelColorButton");
+changePanelColorButton.click(function() {
+	var panelContainer = $("#panelContainer");
+	if (panelContainer.hasClass("panel-primary")) {
+		panelContainer.addClass("panel-success");
+	} else {
+		panelContainer.removeClass("panel-success");
+		panelContainer.addClass("panel-primary");
+	}
+});
