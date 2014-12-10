@@ -88,3 +88,19 @@ changePanelColorButton.click(function() {
 		panelContainer.addClass("panel-primary");
 	}
 });
+
+var imageFocus = $("#imageFocus");
+imageFocus.mouseover(function() {
+	imageFocus.attr("src", "images/waterfall.jpg");
+});
+imageFocus.mouseout(function() {
+	imageFocus.attr("src", "images/flower.jpg");
+});
+
+var lgi1 = $("#lgi1");
+lgi1.mouseover(function() {
+	lgi1.text("GOLDEN");
+});
+lgi1.mouseout(function() {
+	lgi1.text("Red");
+});
