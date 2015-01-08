@@ -16,3 +16,14 @@ buttonColor.click(function() {
 		buttonColor.addClass("btn-info");
 	}
 });
+
+var allButton = $("#buttonColor2");
+allButton.click(function() {
+	if (allButton.hasClass("btn-primary")) {
+		allButton.removeClass("btn-primary");
+		allButton.addClass("btn-danger");
+	} else {
+		allButton.removeClass("btn-danger");
+		allButton.addClass("btn-primary");
+	}
+});
