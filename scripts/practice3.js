@@ -27,3 +27,12 @@ allButton.click(function() {
 		allButton.addClass("btn-primary");
 	}
 });
+
+var thumbnail = $("#waterfall");
+thumbnail.animate({left: "+=200px"}, "slow");
+
+var showButton = $("#showButton");
+var showText = $("#showText");
+showButton.click(fucntion() {
+	showText.show("fast");
+});
