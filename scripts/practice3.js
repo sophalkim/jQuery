@@ -36,3 +36,16 @@ var showText = $("#showText");
 showButton.click(fucntion() {
 	showText.show("fast");
 });
+
+// Enable the form
+$("#formDisable").prop("disabled", true);
+var enableButton = $("#enableForm");
+enableButton.click(function() {
+	$("#formDisable").prop("disabled", false);
+});
+
+var linkItemReplaceButton = $("#linkItemReplaceButton");
+linkItemReplaceButton.click(function() {
+	var secondListItem = $("#li.list-group-item").eq("1");
+	secondListItem.text("Hello World");
+});
