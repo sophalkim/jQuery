@@ -60,3 +60,11 @@ showCheckBoxButton.click(function() {
 		checkBox.hide();
 	}
 });
+
+// Change List Group Items Text into "Potato"
+var panelButton = $("#panelButton");
+panelButton.click(function() {
+	var panelElement = document.getElementById("panelElement");
+	var listGroupItems = panelElement.find(".list-group-item");
+	listGroupItems.text("Potato");
+});
