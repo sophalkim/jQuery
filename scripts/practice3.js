@@ -68,3 +68,13 @@ panelButton.click(function() {
 	var listGroupItems = panelElement.find(".list-group-item");
 	listGroupItems.text("Potato");
 });
+
+// Takes first name as input, then generate sentence with fixed last name.
+var buttonInput = $("#buttonInput");
+buttonInput.click(function() {
+	var inputFirstNameValue = $("#inputFirstName").val();
+	var textFirstLastName = $("#textFirstLastName");
+	var inputLastName = $("#inputLastName");
+	inputLastName.val("Neat");
+	textFirstLastName.text("Your name is " + inputFirstNameValue + " " + inputLastName.val());
+});
