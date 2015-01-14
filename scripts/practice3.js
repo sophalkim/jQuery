@@ -78,3 +78,11 @@ buttonInput.click(function() {
 	inputLastName.val("Neat");
 	textFirstLastName.text("Your name is " + inputFirstNameValue + " " + inputLastName.val());
 });
+
+// Change glyphicon with button
+var glyphiconButton = $("#glyphiconButton");
+glyphiconButton.click(function() {
+	var glyphiconSpan = $("#glyphiconSpan");
+	glyphiconSpan.attr("class", "glyphicon glyphicon-heart");
+});
+
