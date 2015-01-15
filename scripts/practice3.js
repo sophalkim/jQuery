@@ -86,3 +86,15 @@ glyphiconButton.click(function() {
 	glyphiconSpan.attr("class", "glyphicon glyphicon-heart");
 });
 
+// Toggle Panel Color with onClick()
+var changePanelColorButton = $("#changePanelColorButton");
+changePanelColorButton.click(function() {
+	var panelContainer = $("#panelContainer");
+	if (panelContainer.hasClass("panel-primary")) {
+		panelContainer.removeClass("panel-primary");
+		panelContainer.addClass("panel-success");
+	} else {
+		panelContainer.removeClass("panel-success");
+		panelContainer.addClass("panel-primary");
+	}
+});
