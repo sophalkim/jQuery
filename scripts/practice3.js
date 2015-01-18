@@ -107,3 +107,12 @@ imageFocus.mouseover(function() {
 imageFocus.mouseout(function() {
 	imageFocus.attr("src", "images/flower.jpg");
 });
+
+// MouseOver toggles text for list-group-item 1
+var lgi1 = $("#lgi1");
+lgi1.mouseover(function() {
+	lgi1.text("GOLDEN");
+});
+lgi1.mouseout(function() {
+	lgi1.text("RED");
+});
