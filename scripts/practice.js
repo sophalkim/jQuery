@@ -119,6 +119,14 @@ lgi3.mouseout(function() {
 	lgi3.attr("class", "list-group-item");
 });
 
+// Change Panel Color by inputting color into form
+var panelInputColorButton = $("#panelInputColorButton");
+panelInputColorButton.click(function() {
+	var panelInputColor = $("#panelInputColor").val();
+	var panelInputContainer = $("#panelInputContainer");
+	panelInputContainer.toggleClass("info");
+});
+
 
 
 
