@@ -139,7 +139,12 @@ function slideLeftGoTransparent() {
 
 function relativeAnimation() {
 	var relativeAnimation = $("#relative_animation");
-	relativeAnimation.animate({left: '250px'});
+	relativeAnimation.animate({left: '+=250px'});
+}
+
+function relativeAnimation2() {
+	var relativeAnimation2 = $("#relative_animation2");
+	relativeAnimation2.animate({left: '+=100px', height: '+=50px', width: '+=50px'});
 }
 
 
