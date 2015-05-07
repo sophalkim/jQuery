@@ -132,8 +132,15 @@ function slideRightAnimation() {
 	slide_right_h1.animate({left: '250px'});
 }
 
+function slideLeftGoTransparent() {
+	var slide_left_go_transparent = $("#slide_left_go_transparent");
+	slide_left_go_transparent.animate({left: '250px', opacity: '0.25', height: '150px', width: '150px'});
+}
 
-
+function relativeAnimation() {
+	var relativeAnimation = $("#relative_animation");
+	relativeAnimation.animate({left: '250px'});
+}
 
 
 

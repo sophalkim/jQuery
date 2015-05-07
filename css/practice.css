@@ -1,3 +1,7 @@
+* {
+	position: relative;
+}
+
 #showText {
 	display: none;
 }
@@ -12,7 +16,14 @@
 	font-family: "Arial";
 }
 
+/* Animation jQuery */
 #slide_right_h1 {
 	position: relative;
 	width: 300px;
+	left: 0;
+}
+
+#slide_left_go_transparent {
+	position: relative;
+	left: 85%;
 }
