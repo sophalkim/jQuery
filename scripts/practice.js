@@ -147,6 +147,16 @@ function relativeAnimation2() {
 	relativeAnimation2.animate({left: '+=100px', height: '+=50px', width: '+=50px'});
 }
 
+function toggleHeight() {
+	var toggleHeightWidth = $('#toggleHeightWidth');
+	toggleHeightWidth.animate({height: 'toggle'});
+}
+
+function toggleWidth() {
+	var toggleHeightWidth = $('#toggleHeightWidth');
+	toggleHeightWidth.animate({width: 'toggle'});
+}
+
 
 
 
