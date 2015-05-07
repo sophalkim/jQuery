@@ -127,7 +127,10 @@ panelInputColorButton.click(function() {
 	panelInputContainer.toggleClass("info");
 });
 
-
+function slideRightAnimation() {
+	var slide_right_h1 = $("#slide_right_h1");
+	slide_right_h1.animate({left: '250px'});
+}
 
 
 
